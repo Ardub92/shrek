@@ -4,12 +4,14 @@
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
+    user-select: none;
 }
 
-body, video{
+body, video, ul, li{
     margin: 0;
     padding: 0;
 }
@@ -17,4 +19,40 @@ body, video{
 video {
     width: 90vw;
     height: 90vh;
+}
+
+footer nav ul{
+    padding: 2vmin 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav ul li{
+    font-size: 2vmin;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 0 1vmin;
+}
+
+footer nav ul .space{
+    color: gray;
+}
+
+footer nav ul li a{
+    text-decoration: underline;
+}
+
+footer nav ul li a:hover{
+    color: gray;
+}
+
+footer nav ul li a:link, a:visited {
+    color: white;
+}
+
+footer nav ul li a:link:active, a:visited:active {
+    color: white;
 }
