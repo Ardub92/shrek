@@ -31,7 +31,7 @@ footer nav ul{
 }
 
 footer nav ul li{
-    font-size: 2vmin;
+    font-size: 1vmax;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     padding: 0 1vmin;

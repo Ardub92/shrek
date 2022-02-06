@@ -1,14 +1,12 @@
 let video = document.getElementById("video");
-let play = document.getElementById("play");
+let footer = document.querySelector("#footer");
 let html = document.querySelector("html");
 
-play.addEventListener('click', (e) => {
-    video.play();
-});
-
-//Fullscreen app
+//Fullscreen app and play
 document.addEventListener('click', (e) => {
     html.requestFullscreen();
+    video.play();
+    footer.style.display = 'flex';
 });
 
 //Prevent to stop and play video
